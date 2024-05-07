@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.sticky {
+  padding: 3px;
+  background: white;
+}
+
+.sticky ul li a {
+  color: black;
+}
+
+header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div.logo .any {
+  color: #2a2b2f;
+}
+
+header div.logo .gym {
+  color: #2a2b2f;
+}
+
+header nav {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+  padding: 2% 0%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1% 0 0;
+}
+
+header nav ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header nav ul li a i {
+  font-size: 1.5rem;
+  color: orangered;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav ul li a i:hover {
+  border: 1px solid #118f8f;
+  border-radius: 50%;
+  padding: 0.5rem 0.8rem;
+  color: #118f8f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav ul li .cont_log-out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2%;
+  height: 50px;
+}
+
+header nav ul li .cont_log-out span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+header nav ul li .cont_log-out input {
+  width: 50%;
+  border: none;
+  text-align: center;
+  background-color: #eee;
+  color: orangered;
+}
+
+header .slide {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .slide .-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 100%;
+}
+
+header .-content .cont_table {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+}
+
+header .-content .cont_table button {
+  border: none;
+  border-radius: 5px;
+  background-color: orangered;
+  color: papayawhip;
+  width: 10%;
+  padding: 1%;
+  border-bottom: 4px solid #9b2a00;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+header .-content .cont_table button i {
+  font-size: 1.1rem;
+  color: papayawhip;
+}
+
+header .-content .cont_table .table {
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.5);
+  color: white;
+  text-align: center;
+}
+
+header .-content .cont_table .table tr th {
+  background-color: orangered;
+  border-radius: 4px;
+  padding: 1%;
+}
+
+header .-content .cont_table .table tr td {
+  padding: 1%;
+  color: gray;
+}
+
+header .-content .cont_table .table tr td input {
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+  padding: 0% 3%;
+}
+
+header .-content .cont_table .table tr td input:focus {
+  outline: none;
+}
+
+header .-content .cont_table .table tr td button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header .-content .cont_table .table tr td button i {
+  font-size: 2rem;
+  color: gray;
+}
+
+header .-content .cont_table .table tr td button i:hover {
+  color: forestgreen;
+}
+
+header .-content .cont_table .table tr td select {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 2%;
+}
+
+header .-content .cont_table .table tr td select:focus {
+  outline: none;
+}
+
+header .-content .cont_table .table tr td div {
+  width: 100%;
+}
+
+header .-content .cont_table .table tr td div label {
+  margin: 0 5%;
+}
+
+header .-content .cont_table .table tr td i {
+  cursor: pointer;
+}
+
+header .-content .cont_table .table tr td div.container {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .-content .cont_table .table tr td div.container .checkbox {
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .-content .cont_table .table tr td div.container .checkbox input[type="checkbox"] {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+  margin-left: -20px;
+}
+
+header .-content .cont_table .table tr td div.container .checkbox input[type="checkbox"]:checked ~ label::before {
+  color: #16aa8a;
+}
+
+header .-content .cont_table .table tr td div.container .checkbox input[type="checkbox"]:checked ~ label::after {
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+}
+
+header .-content .cont_table .table tr td div.container .checkbox input[type="checkbox"]:focus + label::before {
+  outline: 0;
+}
+
+header .-content .cont_table .table tr td div.container .checkbox label {
+  position: relative;
+  min-height: 34px;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: sub;
+}
+
+header .-content .cont_table .table tr td div.container .checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+  -webkit-transition: -webkit-transform 0.28s ease;
+  transition: -webkit-transform 0.28s ease;
+  transition: transform 0.28s ease;
+  transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+  border-radius: 3px;
+  border: 2px solid #16aa8a;
+}
+
+header .-content .cont_table .table tr td div.container .checkbox label::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid #16aa8a;
+  border-left: 2px solid #16aa8a;
+  -webkit-transform: rotate(-45deg) scale(0);
+  transform: rotate(-45deg) scale(0);
+  -webkit-transition: -webkit-transform ease 0.25s;
+  transition: -webkit-transform ease 0.25s;
+  transition: transform ease 0.25s;
+  transition: transform ease 0.25s, -webkit-transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+header .-content .cont_table .table tr td.cont_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .-content .cont_table .table tr td.cont_btn button.btn_upd,
+header .-content .cont_table .table tr td.cont_btn button.btn_del {
+  background-color: orangered;
+  padding: 5% 10%;
+  margin: 2%;
+}
+
+header .-content .cont_table .table tr td.cont_btn button.btn_upd:hover,
+header .-content .cont_table .table tr td.cont_btn button.btn_del:hover {
+  background-color: #fa5519;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .-content .cont_table .table tr td.cont_btn_save button.btn_save {
+  background-color: orangered;
+  padding: 5% 10%;
+}
+
+header .-content .cont_table .table tr td.cont_btn_save button.btn_save:hover {
+  background-color: #fa5519;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .-content .cont_table .table_add {
+  margin: 2% 0 0% 0 !important;
+}
+
+header .-content .cont_table .table_show {
+  margin: 2% 0 10% 0 !important;
+}
+
+.fa-check-circle,
+.fa-times-circle {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=index.css.map */

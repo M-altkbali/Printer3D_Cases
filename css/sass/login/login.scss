@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+html{
+    // background-color: #232323;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+
+    .login {
+        width: 60%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img {
+            margin-left: 10%;
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        div.inputs {
+            // background-color: rgb(240, 240, 240);
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-left: 10%;
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            input,
+            select {
+                border: none;
+                margin: 2%;
+                padding: 1% 2%;
+                font-size: 1.2rem;
+                border-bottom: 1px solid #aaa;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                background-color: #2a979a;
+                border: none;
+                color: white;
+                padding: 4% 0;
+                margin: 4% 1%;
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
+            }
+            select {
+                cursor: pointer;
+            }
+
+            .trans{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    border: .5px solid #2a979a;
+                    padding: 2%;
+                    border-radius: 50%;
+                    margin: 1%;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        .copyr {
+            margin-left: 10%;
+            text-align: center;
+        }
+    }
+    .pic {
+        display: flex;
+        align-items: center;
+        // border-left: 1px solid #aaa;
+        @media only screen and (max-width: 768px) {
+            border-bottom: 1px solid #aaa;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
