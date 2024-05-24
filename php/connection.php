@@ -2,7 +2,7 @@
 
 $dbhost = "";
 $dbuser = "root";
-$dbpass = "admin";
+$dbpass = "";
 $dbname = "print";
 
 if (!$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)) {
